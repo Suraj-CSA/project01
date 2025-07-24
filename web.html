@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 40px;
+            width: 100%;
+            text-align: center;
+            font-size: 1.8em;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>Welcome to My Simple Webpage</header>
+    <main>
+        <p id="message">Hello, this is a simple webpage created with HTML, CSS, and JavaScript.</p>
+        <button onclick="changeMessage()">Click Me!</button>
+    </main>
+    <script>
+        function changeMessage() {
+            document.getElementById('message').textContent = "You clicked the button! JavaScript is working.";
+        }
+    </script>
+</body>
+</html>
